@@ -320,7 +320,8 @@ NSInteger const AIR_CALLOUT_OPEN_ZINDEX_BASELINE = 999;
         [self setSelected:YES animated:NO]; // added line
     } else { // added line
         [self setSelected:NO animated:NO]; // added line
-    } // added line    _zIndex = _calloutIsOpen ? zIndex + AIR_CALLOUT_OPEN_ZINDEX_BASELINE : zIndex;
+    } // added line    
+    _zIndex = _calloutIsOpen ? zIndex + AIR_CALLOUT_OPEN_ZINDEX_BASELINE : zIndex;
     self.layer.zPosition = zIndex;
 }
 
